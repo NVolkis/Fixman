@@ -1,0 +1,191 @@
+body {
+    background: url('../img/7.jpg') no-repeat fixed;
+    background-size: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    font-size: 100px;
+    font-family: '15222';
+    background: url('../img/7.jpg') no-repeat fixed;
+    background-size: 100%;
+    min-height: 0vh;
+}
+
+
+
+.section .text {
+    text-align: justify;
+}
+
+@font-face {
+    font-family: '15222';
+    src: url('../fonts/15222.otf');
+}
+
+h1 span {
+    color: yellow;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    margin-top: -5%;
+}
+
+.row a {
+    border-radius: 70px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: '15222';
+}
+
+.row span {
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+}
+
+
+
+.row span a {
+    border-radius: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: yellow;
+    font-family: '15222';
+}
+
+.row a:hover {
+    color: yellow;
+    background-color: black;
+    transition: all .4s;
+}
+
+.row span a:hover {
+    color: black;
+    background-color: yellow;
+    transition: all .4s;
+}
+
+section {
+    
+    margin-top: 2%;
+    
+    background-color: black;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 30px;
+    opacity: 0.5;
+}
+
+section h1:after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    opacity: 0.5;
+}
+
+footer h1:after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+}
+
+footer h3:after {
+    content: "";
+    display: block;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+}
+
+footer h3:before {
+    content: "";
+    display: block;
+    width: 150px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+}
+
+footer a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: yellow;
+    color: black;
+    padding: 20px;
+    padding-left: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 970px) {
+    .container {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 683px) {
+    .container {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 490px) {
+    .container {
+        font-size: 30px;
+    }
+    .text,
+    footer {
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .row, span a {
+        display: grid;
+        font-size: 20px;
+    }
+}

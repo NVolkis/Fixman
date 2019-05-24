@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../img/e.png') no-repeat center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+    background: darkgrey;
+   
+}
+
+.header #prays:hover {
+    color: yellow;
+}
+
+.header #prays {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    margin-bottom: 20PX;
+}
+
+.text {
+    border: 1px solid #000;
+    border-radius: 5PX;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: grey;
+    color: white;
+    text-align: justify;
+}
+
+h1 {
+    justify-content: space-around;
+}
+
+h1 span {
+    color: yellow;
+}
+
+.header a {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.home {
+    margin: 10px;
+    text-align: center;
+}
+
+.home a {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.home a:hover {
+    background-color: black;
+    color: yellow;
+    border-radius: 100px 20px;
+}
+
+.block-sector {
+    display: flex;
+}
+
+.block-sector .block {
+    margin: 5%;
+    width: 340px;
+    height: 390px;
+    border-radius: 5%;
+    overflow: scroll;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid #000;
+}
+
+.block-sector .block img,
+.block-sector .block h2 {
+    position: -webkit-sticky;
+    position: auto;
+    top: 0;
+    width: 100% auto;
+}
+
+.block-sector .block::-webkit-scrollbar {
+    width: 0px;
+}
+
+.block-sector .block h2 {
+    margin: 0;
+    top: auto;
+    background-color: grey;
+}
+
+@media (max-width: 932px) {
+    .header {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .block-sector {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 556px) {
+    .header,
+    .reg {
+        display: grid;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header img {
+        display: flex;
+        padding-bottom: 20px;
+    }
+   
+    .text {
+        font-size: 16px;
+    }
+}
